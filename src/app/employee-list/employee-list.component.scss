@@ -1,0 +1,38 @@
+.heading {
+	h1 {
+		font-size: 28px;
+		margin-right: 10px;
+		display: inline-block;
+	}	
+}
+
+table {
+	width: 100%;
+}
+
+.mat-form-field {
+  	font-size: 14px;
+  	width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  	color: black;
+}
+
+.cdk-column-actions {
+	> a {
+		margin-right: 10px;
+
+		.material-icons {
+			color: #999;
+
+			&:hover {
+				color: #333;
+			}
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+}
