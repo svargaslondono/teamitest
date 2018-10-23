@@ -1,18 +1,38 @@
-.heading {
-	h1 {
-		font-size: 28px;
-		margin-right: 10px;
-		display: inline-block;
-	}	
-}
-
 table {
 	width: 100%;
+}
+
+.heading {
+	h1 {
+		display: inline-block;
+		margin-right: 10px;
+		font-size: 20px;
+		font-weight: 100;
+	}
+
+	mat-form-field {
+		width: auto;
+		.material-icons {
+			font-size: 14px;
+			margin-right: 5px;
+			color: #777;
+		}
+	}
 }
 
 .mat-form-field {
   	font-size: 14px;
   	width: 100%;
+}
+
+.new-employee-btn {
+	margin-top: 20px;
+	display: inline-block;
+
+	button {
+		border-radius: 0;
+		font-weight: 100;
+	}
 }
 
 th.mat-sort-header-sorted {

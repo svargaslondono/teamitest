@@ -1,11 +1,11 @@
 <div class="container">
-	<div class="heading">
-		<h1>Employees</h1>
-
+  <section class="heading mat-typography">
+    <h1>Employees</h1>
     <mat-form-field>
+      <span matPrefix><i class="material-icons">search</i></span>
       <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search by name">
-    </mat-form-field>	
-  </div>
+    </mat-form-field> 
+  </section>
 
   <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
     <ng-container matColumnDef="name">
@@ -47,5 +47,8 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 
-  <a routerLink="/employee/new">Add a new employee</a>
+
+  <a class="new-employee-btn" routerLink="/employee/new">
+    <button mat-raised-button>Add a new employee</button>
+  </a>
 </div>

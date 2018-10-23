@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTableModule, MatFormFieldModule, MatInputModule, MatSortModule, MatDatepickerModule } from '@angular/material';
+import { MatTableModule, MatFormFieldModule, MatInputModule, MatSortModule, MatDatepickerModule, MatButtonModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
@@ -28,7 +28,8 @@ import { AgePipe } from './age.pipe';
     MatFormFieldModule,
     MatInputModule,
     MatSortModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
